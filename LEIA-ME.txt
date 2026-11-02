@@ -1,0 +1,13 @@
+Coloca aqui as tuas fotografias (JPG) com estes nomes exatos.
+Enquanto uma foto não existir, o site mostra o fundo colorido no lugar dela.
+
+hero.jpg        – foto grande do topo (horizontal, ~2000px de largura)
+portugal.jpg    – "A nossa história", foto Portugal (vertical)
+australia.jpg   – "A nossa história", foto Austrália (vertical)
+perth.jpg       – mosaico: A nossa vida em Perth
+aventuras.jpg   – mosaico: Aventuras em família
+lugares.jpg     – mosaico: Lugares que descobrimos
+dia-a-dia.jpg   – mosaico: O dia a dia com crianças
+ig-1.jpg … ig-4.jpg – grelha do Instagram (secção final)
+
+Dica: comprime as fotos (ex.: squoosh.app) para menos de ~400 KB cada.
