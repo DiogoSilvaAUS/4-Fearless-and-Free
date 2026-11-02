@@ -49,7 +49,7 @@ nav.open{display:flex}nav a{text-decoration:none;font-size:15px;padding:12px 0;c
 .hero p.l{margin-top:26px;max-width:52ch;font-size:19px;color:#eef1ee}.hero p.b{margin:22px 0 32px;font:24px var(--serif)}
 .cta{display:flex;flex-wrap:wrap;gap:12px}
 /* story */
-.story{display:grid;gap:44px}.story .t{max-width:640px}.story h2{margin-bottom:28px}
+.story{display:grid;gap:44px}.story .t{max-width:640px}.story h2{margin-bottom:28px}.story h3{font-size:clamp(24px,3vw,30px);color:var(--ocean);margin:44px 0 16px}.story h3+p{margin-top:0}.story .close{font:clamp(24px,3vw,30px)/1.25 var(--serif);color:var(--terra);margin-top:32px}
 .pair{display:grid;gap:18px;grid-template-columns:1fr 1fr;align-self:start}.pair .ph{aspect-ratio:3/4}.pair .ph:nth-child(2){margin-top:44px}
 /* life */
 .life{background:var(--white)}.life .in{max-width:680px;margin-bottom:44px}.life h2{margin-bottom:24px}
@@ -83,7 +83,7 @@ footer{background:var(--char);color:#d0d4d1;font-size:15px;padding:44px 0}footer
 @media(min-width:860px){
 .sec{padding:128px 0}.tog{display:none}
 nav{display:flex;position:static;flex-direction:row;gap:30px;padding:0;border:0;background:none}nav a{padding:8px 0;font-size:14px}
-.story{grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
+.story{grid-template-columns:1.05fr .95fr;gap:80px;align-items:start}.story .pair{position:sticky;top:110px}
 .mos{grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:240px 240px}.mos .a{grid-row:span 2}.mos .d{grid-column:span 2}
 .topics{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:repeat(3,1fr)}.rb{padding:56px}
 .fin .w{grid-template-columns:.9fr 1.1fr;align-items:center;gap:72px}.igm{grid-template-rows:repeat(2,200px)}}
@@ -108,14 +108,35 @@ html.js .rv{opacity:0;transform:translateY(22px);transition:opacity .9s ease,tra
 </section>
 
 <section class="sec" id="historia"><div class="w story">
-<div class="t rv"><p class="eyebrow">A nossa história</p><h2>Tudo começou com uma ideia...</h2>
-<p>Durante muito tempo, a ideia de viver noutro país foi apenas isso: uma ideia.</p>
-<p>Até que começámos a imaginar como seria começar de novo noutro lugar. Uma vida diferente, novas oportunidades, novas experiências e um mundo diferente para os nossos filhos descobrirem.</p>
-<p>A decisão não aconteceu de um dia para o outro. Houve conversas, dúvidas, pesquisas, planeamento, decisões difíceis e muitas coisas para organizar.</p>
-<p>Até que deixámos Portugal e viemos para Perth, na Austrália.</p>
-<p>Chegámos a 1 de maio de 2025, com duas crianças e uma vida inteira para reconstruir.</p>
-<p>Não tínhamos todas as respostas. Aliás, ainda hoje há muitas coisas que estamos a descobrir.</p>
-<p>A 4 Fearless &amp; Free nasceu precisamente daí: da vontade de documentar esta experiência, partilhar o que aprendemos e mostrar a realidade de começar de novo do outro lado do mundo.</p></div>
+<div class="t rv"><p class="eyebrow">A nossa história</p><h2>Não estávamos à procura de fugir. Queríamos viver mais.</h2>
+<p>Durante muitos anos, construímos a nossa vida em Portugal. Tínhamos a nossa casa, os nossos trabalhos, os nossos amigos e uma rotina que conhecíamos bem. Éramos felizes e tínhamos muito orgulho naquilo que tínhamos conquistado.</p>
+<p>Eu tinha construído o meu negócio de fotografia ao longo de nove anos. O meu marido trabalhava em Lisboa e, juntos, também fotografávamos casamentos e baptizados. Gostávamos do que fazíamos, mas a verdade é que os nossos dias estavam quase sempre cheios de trabalho, horários, sessões, compromissos e coisas por fazer.</p>
+<p>Com o tempo, começámos a sentir que estávamos sempre a correr. Queríamos aproveitar mais os nossos filhos, acompanhar o seu crescimento e estar verdadeiramente presentes, sem sentir que havia sempre alguma coisa à espera que terminássemos.</p>
+<p>Não estávamos à procura de uma vida melhor porque a nossa fosse má. Estávamos simplesmente à procura de uma vida diferente.</p>
+<h3>O bichinho da aventura nunca desapareceu</h3>
+<p>Já tínhamos vivido em Inglaterra antes de regressarmos a Portugal, por isso a ideia de voltar a começar noutro país não era completamente nova para nós.</p>
+<p>Mas desta vez era diferente. Já não éramos só nós os dois. Tínhamos duas crianças e uma decisão muito maior pela frente.</p>
+<p>Começámos a pensar no que procurávamos: um país de língua inglesa, onde pudéssemos acompanhar os nossos filhos na escola, um clima mais quente, praia e um estilo de vida que nos permitisse passar mais tempo juntos.</p>
+<p>A Austrália já fazia parte das nossas conversas há algum tempo. A distância fazia-nos adiar a ideia, mas, quando começámos a olhar seriamente para as possibilidades, percebemos que reunia quase tudo aquilo que procurávamos. Também considerámos o Canadá, mas a ideia de voltar a viver num clima frio nunca me convenceu.</p>
+<p>E, pouco a pouco, aquela ideia que parecia tão distante começou a transformar-se num plano.</p>
+<h3>Fechar uma porta para abrir outra</h3>
+<p>Deixar para trás o meu negócio de fotografia foi, provavelmente, uma das partes mais difíceis da mudança.</p>
+<p>Foram nove anos de trabalho, dedicação e muitas memórias. Vendi o negócio por completo, incluindo todo o conteúdo do estúdio. Durante muito tempo, cada canto daquele espaço representava uma parte de mim.</p>
+<p>Custou-me perceber que não voltaria a fotografar aquelas famílias, naquele espaço, nem a viver aquela rotina que tinha construído com tanto esforço.</p>
+<p>Mas também sabia que estava pronta para fechar esse capítulo. Gostava muito do meu trabalho, mas sentia que me estava a tirar demasiado. Precisava de espaço para descobrir o que vinha a seguir.</p>
+<h3>1 de maio de 2025 — chegámos a Perth</h3>
+<p>E, de repente, estávamos do outro lado do mundo.</p>
+<p>No dia 1 de maio de 2025 chegámos a Perth, na Austrália. Ainda hoje é difícil explicar a mistura de sentimentos daquele momento. Havia entusiasmo, nervosismo, dúvidas e aquela sensação de: “Será que fizemos mesmo isto?”</p>
+<p>Talvez tenha sido um bocadinho de coragem e outro de loucura. Mas acabou por ser a melhor coisa maluca que alguma vez fizemos.</p>
+<p>Uma das primeiras coisas que quisemos fazer foi conhecer as praias. E, sinceramente, ainda hoje há dias em que olhamos para o mar e nos custa acreditar na beleza dos lugares que temos tão perto.</p>
+<p>Começámos a descobrir uma vida diferente. Ir à praia depois da escola, andar de bicicleta, explorar sítios novos e aproveitar pequenos momentos que antes pareciam tão difíceis de encaixar na rotina.</p>
+<p>Mas a maior mudança não aconteceu apenas nos lugares que passámos a conhecer.</p>
+<p>Foi perceber que começámos a conhecer ainda melhor os nossos filhos. Que eles também se aproximaram muito mais um do outro. E que, no meio de toda esta mudança, nos tornámos ainda mais próximos enquanto família.</p>
+<h3>E esta é apenas a primeira parte da história.</h3>
+<p>Não temos tudo planeado, nem todas as respostas. Continuamos a aprender, a adaptar-nos e a descobrir o que significa construir uma vida num país tão longe daquele a que sempre chamámos casa.</p>
+<p>Criámos a 4 Fearless &amp; Free para partilhar precisamente isso: a nossa experiência, os nossos dias, as descobertas, os desafios e tudo aquilo que vamos aprendendo pelo caminho.</p>
+<p>Porque acreditamos que não precisamos de fugir de uma vida má para escolher uma vida diferente.</p>
+<p class="close">Às vezes, só precisamos de perceber que queremos viver mais.</p></div>
 <div class="pair rv"><figure class="ph" role="img" aria-label="Fotografia da família em Portugal"><img src="images/portugal.jpg" alt="" loading="lazy" onerror="this.remove()"><figcaption>Portugal</figcaption></figure><figure class="ph o" role="img" aria-label="Fotografia da família na Austrália"><img src="images/australia.jpg" alt="" loading="lazy" onerror="this.remove()"><figcaption>Austrália</figcaption></figure></div>
 </div></section>
 
