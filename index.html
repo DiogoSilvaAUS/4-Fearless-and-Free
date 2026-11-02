@@ -50,7 +50,7 @@ nav.open{display:flex}nav a{text-decoration:none;font-size:15px;padding:12px 0;c
 .cta{display:flex;flex-wrap:wrap;gap:12px}
 /* story */
 .story{display:grid;gap:44px}.story .t{max-width:640px}.story h2{margin-bottom:28px}.story h3{font-size:clamp(24px,3vw,30px);color:var(--ocean);margin:44px 0 16px}.story h3+p{margin-top:0}.story .close{font:clamp(24px,3vw,30px)/1.25 var(--serif);color:var(--terra);margin-top:32px}
-.pair{display:grid;gap:18px;grid-template-columns:1fr 1fr;align-self:start}.pair .ph.land{grid-column:1/-1;aspect-ratio:1600/1068}.pair .ph.port{grid-column:2;aspect-ratio:3/4;margin-top:-60px;box-shadow:0 0 0 8px var(--sand)}.pair .ph::after{display:none}.story .pair{order:-1}
+.pair{display:grid;gap:18px;grid-template-columns:1fr 1fr;align-self:start}.pair .ph.a{grid-column:1/-1}.pair .ph.b{grid-column:2;margin-top:-60px;box-shadow:0 0 0 8px var(--sand)}.pair .ph::after{display:none}.story .t h3:first-child{margin-top:0}
 /* life */
 .life{background:var(--white)}.life .in{max-width:680px;margin-bottom:44px}.life h2{margin-bottom:24px}
 .mos{display:grid;gap:14px;grid-template-columns:1fr 1fr}.mos .ph{min-height:200px;border-radius:20px}
@@ -83,7 +83,7 @@ footer{background:var(--char);color:#d0d4d1;font-size:15px;padding:44px 0}footer
 @media(min-width:860px){
 .sec{padding:128px 0}.tog{display:none}
 nav{display:flex;position:static;flex-direction:row;gap:30px;padding:0;border:0;background:none}nav a{padding:8px 0;font-size:14px}
-.story{grid-template-columns:1.05fr .95fr;gap:80px;align-items:start}.story .pair{position:sticky;top:110px;order:0}
+.story{grid-template-columns:1.05fr .95fr;grid-auto-flow:row dense;column-gap:80px;row-gap:56px;align-items:start}.story .t{grid-column:1}.story .pair{grid-column:2}
 .mos{grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:240px 240px}.mos .a{grid-row:span 2}.mos .d{grid-column:span 2}
 .topics{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:repeat(3,1fr)}.rb{padding:56px}
 .fin .w{grid-template-columns:.9fr 1.1fr;align-items:center;gap:72px}.igm{grid-template-rows:repeat(2,200px)}}
@@ -108,6 +108,7 @@ html.js .rv{opacity:0;transform:translateY(22px);transition:opacity .9s ease,tra
 </section>
 
 <section class="sec" id="historia"><div class="w story">
+<div class="pair rv"><figure class="ph a" style="aspect-ratio:1600/1068" role="img" aria-label="A nossa família em Portugal, no primeiro aniversário da nossa filha"><img src="images/historia-1.jpg" alt="" loading="lazy" onerror="this.remove()"></figure><figure class="ph b" style="aspect-ratio:3/4" role="img" aria-label="Os nossos filhos a almoçar no terraço da nossa casa em Portugal"><img src="images/historia-2.jpg" alt="" loading="lazy" onerror="this.remove()"></figure></div>
 <div class="t rv"><p class="eyebrow">A nossa história</p><h2>Não estávamos à procura de fugir. Queríamos viver mais.</h2>
 <p>Durante muitos anos, construímos a nossa vida em Portugal. Tínhamos a nossa casa, os nossos trabalhos, os nossos amigos e uma rotina que conhecíamos bem. Éramos felizes e tínhamos muito orgulho naquilo que tínhamos conquistado.</p>
 <p>Eu tinha construído o meu negócio de fotografia ao longo de nove anos. O meu marido trabalhava em Lisboa e, juntos, também fotografávamos casamentos e baptizados. Gostávamos do que fazíamos, mas a verdade é que os nossos dias estavam quase sempre cheios de trabalho, horários, sessões, compromissos e coisas por fazer.</p>
@@ -119,12 +120,15 @@ html.js .rv{opacity:0;transform:translateY(22px);transition:opacity .9s ease,tra
 <p>Começámos a pensar no que procurávamos: um país de língua inglesa, onde pudéssemos acompanhar os nossos filhos na escola, um clima mais quente, praia e um estilo de vida que nos permitisse passar mais tempo juntos.</p>
 <p>A Austrália já fazia parte das nossas conversas há algum tempo. A distância fazia-nos adiar a ideia, mas, quando começámos a olhar seriamente para as possibilidades, percebemos que reunia quase tudo aquilo que procurávamos. Também considerámos o Canadá, mas a ideia de voltar a viver num clima frio nunca me convenceu.</p>
 <p>E, pouco a pouco, aquela ideia que parecia tão distante começou a transformar-se num plano.</p>
-<h3>Fechar uma porta para abrir outra</h3>
+</div>
+<div class="pair rv"><figure class="ph a" style="aspect-ratio:4/3" role="img" aria-label="Eu à porta do Estúdio da Rita, o meu estúdio de fotografia em Portugal"><img src="images/estudio-1.jpg" alt="" loading="lazy" onerror="this.remove()"></figure><figure class="ph b" style="aspect-ratio:4/3" role="img" aria-label="Eu a fotografar duas crianças no estúdio"><img src="images/estudio-2.jpg" alt="" loading="lazy" onerror="this.remove()"></figure></div>
+<div class="t rv"><h3>Fechar uma porta para abrir outra</h3>
 <p>Deixar para trás o meu negócio de fotografia foi, provavelmente, uma das partes mais difíceis da mudança.</p>
 <p>Foram nove anos de trabalho, dedicação e muitas memórias. Vendi o negócio por completo, incluindo todo o conteúdo do estúdio. Durante muito tempo, cada canto daquele espaço representava uma parte de mim.</p>
 <p>Custou-me perceber que não voltaria a fotografar aquelas famílias, naquele espaço, nem a viver aquela rotina que tinha construído com tanto esforço.</p>
 <p>Mas também sabia que estava pronta para fechar esse capítulo. Gostava muito do meu trabalho, mas sentia que me estava a tirar demasiado. Precisava de espaço para descobrir o que vinha a seguir.</p>
-<h3>1 de maio de 2025 — chegámos a Perth</h3>
+</div>
+<div class="t rv"><h3>1 de maio de 2025 — chegámos a Perth</h3>
 <p>E, de repente, estávamos do outro lado do mundo.</p>
 <p>No dia 1 de maio de 2025 chegámos a Perth, na Austrália. Ainda hoje é difícil explicar a mistura de sentimentos daquele momento. Havia entusiasmo, nervosismo, dúvidas e aquela sensação de: “Será que fizemos mesmo isto?”</p>
 <p>Talvez tenha sido um bocadinho de coragem e outro de loucura. Mas acabou por ser a melhor coisa maluca que alguma vez fizemos.</p>
@@ -137,7 +141,7 @@ html.js .rv{opacity:0;transform:translateY(22px);transition:opacity .9s ease,tra
 <p>Criámos a 4 Fearless &amp; Free para partilhar precisamente isso: a nossa experiência, os nossos dias, as descobertas, os desafios e tudo aquilo que vamos aprendendo pelo caminho.</p>
 <p>Porque acreditamos que não precisamos de fugir de uma vida má para escolher uma vida diferente.</p>
 <p class="close">Às vezes, só precisamos de perceber que queremos viver mais.</p></div>
-<div class="pair rv"><figure class="ph land" role="img" aria-label="A nossa família em Portugal, no primeiro aniversário da nossa filha"><img src="images/historia-1.jpg" alt="" loading="lazy" onerror="this.remove()"></figure><figure class="ph port" role="img" aria-label="Os nossos filhos a almoçar no terraço da nossa casa em Portugal"><img src="images/historia-2.jpg" alt="" loading="lazy" onerror="this.remove()"></figure></div>
+
 </div></section>
 
 <section class="sec life" id="vida"><div class="w">
